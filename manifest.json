@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Document Viewer Extension",
+    "version": "1.0",
+    "description": "An extension to open selected files in a new tab.",
+    "permissions": ["activeTab"],
+    "browser_action" : {
+        "default_popup" : "index.html",
+        "default_icon" : "Document_viewer.png"
+    }
+
+}

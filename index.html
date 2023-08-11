@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Viewer Extension</title>
+  <style>
+    body {
+        width:400px;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7; 
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #inputfile {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        width: 80%;
+        border: 2px dashed #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+    }
+
+    #inputfile:hover {
+        border-color: #007bff;
+    }
+
+    .btn {
+        display: inline-block;
+        border: none;
+        color: white;
+        background-color: #007bff;
+        border-radius: 6px;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="file" id="inputfile">
+    <br>
+    <button type="submit" id="showFileButton"  onclick="return displayfile()" class="btn">Show File</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
